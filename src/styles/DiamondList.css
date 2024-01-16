@@ -1,0 +1,42 @@
+/* src/styles/DiamondList.css */
+.diamond-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.diamond-item {
+   background: #f9f9f9;
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin: 10px;
+   width: 200px;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diamond-item img {
+   max-width: 100%;
+   height: auto;
+}
+
+.diamond-image {
+   max-width: 100%;
+   height: auto;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+li {
+   padding: 8px;
+   margin: 8px 0;
+   border: 1px solid #ccc;
+}
+
+img {
+   max-width: 200px;
+   height: auto;
+}

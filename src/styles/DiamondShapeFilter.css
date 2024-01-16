@@ -1,0 +1,81 @@
+/* DiamondShapeFilter.css */
+
+.diamond-shape-filter {
+   position: relative;
+   padding: 20px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   overflow: hidden;
+}
+
+.catchy-phrase {
+   width: 100%;
+   font-size: 1.5em;
+   text-align: center;
+   padding: 20px;
+   margin-bottom: 20px;
+   color: #333;
+   font-weight: bold;
+}
+
+.diamond-shape-container {
+   display: flex;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-padding: 20px;
+}
+
+.diamond-shape-item {
+   flex: 0 0 auto;
+   background-color: "white";
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 10px;
+   justify-content: space-between;
+   margin: 10px;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   scroll-snap-align: start;
+   position: relative; /* added */
+}
+
+.diamond-shape-item img {
+   max-width: 80px;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.diamond-shape-item p {
+   margin: 0;
+   font-weight: bold;
+   position: absolute; /* added */
+   bottom: 5px; /* added */
+   left: 50%; /* added */
+   transform: translateX(-50%); /* added */
+}
+
+.diamond-shape-item:hover {
+   background-color: "white";
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transform: scale(1.05);
+}
+
+.scroll-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.scroll-button.left {
+   left: 0;
+}
+
+.scroll-button.right {
+   right: 0;
+}

@@ -1,0 +1,143 @@
+/* DiamondCustomizer.css */
+
+.diamond-customizer {
+   background-color: #fafafa;
+   border-radius: 15px;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Style for the filter container */
+.filters {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+/* Make filter labels look clickable */
+.filter-btn {
+   background-color: #ffffff;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   cursor: pointer;
+   position: relative;
+   min-width: 150px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   transition: 0.2s;
+}
+
+.filter-btn:hover {
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+   transition: 0.2s;
+}
+
+.filter-btn.active {
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+   transition: 0.2s;
+}
+
+.filter-options {
+   background-color: #ffffff;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   transition: 0.2s;
+}
+
+.filter-btn select,
+.filter-btn div {
+   transition: max-height 0.15s ease-out;
+   max-height: 0px;
+   overflow: hidden;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 10px;
+   margin-top: 5px;
+   z-index: 1;
+   width: 100%; /* Set width to 100% to match the button's width */
+}
+
+.filter-btn.active select,
+.filter-btn.active div {
+   max-height: 300px;
+   transition: max-height 0.25s ease-in;
+}
+
+.type-icon {
+   height: 20px;
+   width: 20px;
+   margin-right: 5px;
+}
+
+/* Style for the cuts container */
+.cuts-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.cut-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.cut-item img {
+   width: 50px;
+   height: 50px;
+}
+
+/* Style for input ranges */
+.diamond-customizer .filter-slider {
+   width: 100%;
+   margin: 10px 0;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Show the range values */
+.diamond-customizer .filter-slider span {
+   margin-bottom: 5px;
+}
+
+/* Styling for mobile devices */
+@media screen and (max-width: 768px) {
+   .diamond-customizer {
+      padding: 10px;
+   }
+
+   .cut-item img {
+      width: 40px;
+      height: 40px;
+   }
+
+   .filter-container {
+      flex-direction: column;
+   }
+}
+
+/* Styling for larger devices */
+@media screen and (min-width: 769px) {
+   .diamond-customizer {
+      padding: 20px;
+   }
+
+   .cut-item img {
+      width: 50px;
+      height: 50px;
+   }
+}

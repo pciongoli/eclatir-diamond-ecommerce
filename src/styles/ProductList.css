@@ -1,0 +1,75 @@
+/* src/styles/ProductList.css */
+
+.product-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 0;
+   list-style-type: none; /* Remove bullet points */
+}
+
+.product-item {
+   background: #f9f9f9;
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin: 10px;
+   flex: 1 0 21%; /* flex-grow | flex-shrink | flex-basis */
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   max-width: calc(25% - 20px); /* 25% width for large screens */
+}
+
+.product-item img {
+   max-width: 100%;
+   height: auto;
+   margin: 0; /* Removing margin */
+   padding-top: 0; /* Removing top padding */
+}
+
+.product-name {
+   font-size: 0.9em; /* Smaller font size */
+   margin: 5px 0;
+}
+
+.product-price {
+   font-size: 0.8em; /* Even smaller font size */
+   margin: 5px 0;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+@media screen and (max-width: 1200px) {
+   .product-item {
+      max-width: calc(33% - 20px); /* 33% width for medium screens */
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .product-item {
+      max-width: calc(50% - 20px); /* 50% width for small screens */
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .product-item {
+      max-width: 100%; /* 100% width for extra small screens */
+   }
+}

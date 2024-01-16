@@ -1,0 +1,19 @@
+/* styles/Layout.css */
+
+.layout-container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Ensure it's at least the height of the viewport */
+}
+
+.layout-content {
+   flex: 1 0 auto;
+   padding: 0px;
+}
+
+footer {
+   padding: 20px;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+}

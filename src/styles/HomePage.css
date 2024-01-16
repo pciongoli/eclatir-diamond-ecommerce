@@ -1,0 +1,21 @@
+/* HomePage.css */
+.jumbotron {
+   position: relative;
+   overflow: hidden;
+   max-width: 100%;
+}
+
+.carousel {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+   min-width: 100%;
+   transition: 0.6s ease;
+}
+
+.carousel-item img {
+   width: 100%;
+   height: auto;
+}

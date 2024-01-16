@@ -1,0 +1,35 @@
+/* styles/FeaturedProducts.css */
+.featured-products {
+   padding: 50px;
+   background-color: #f4f1de;
+}
+
+.content-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.featured-info {
+   flex: 1;
+   padding: 20px;
+   color: #3d405b;
+   max-width: 60%;
+}
+
+.product-slider {
+   flex: 2;
+   max-width: 40%;
+   padding: 20px;
+   background-color: #fff;
+   border: 1px solid #e07a5f;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+   .featured-info,
+   .product-slider {
+      max-width: 100%;
+   }
+}

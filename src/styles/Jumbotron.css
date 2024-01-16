@@ -1,0 +1,39 @@
+.jumbotron {
+   background-color: #818ab2;
+   padding: 50px;
+   text-align: center;
+   margin-bottom: 30px;
+   color: #fff;
+}
+
+.jumbotron h1 {
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+
+.jumbotron p {
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+
+.jumbotron .buttons {
+   display: flex;
+   justify-content: center;
+}
+
+.jumbotron .buttons button {
+   background-color: #e05f8c; /* Rust color */
+   border: none;
+   color: #fff;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+.jumbotron .buttons button:hover {
+   background-color: #d65f4a;
+}
