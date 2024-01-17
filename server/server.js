@@ -15,10 +15,10 @@ const app = express();
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost/diamond-store", {
-   useNewUrlParser: true,
-   useUnifiedTopology: true,
-});
+mongoose.connect(
+   process.env.MONGODB_URI || "mongodb://localhost/diamond-store",
+   { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 // Middleware for parsing JSON
 app.use(express.json());
@@ -187,4 +187,7 @@ app.get("/api/:category/:productId", async (req, res) => {
 });
 
 // Listen on port 6000
-app.listen(6000, () => console.log("Server running on port 6000"));
+const port = process.env.PORT || 6000;
+app.listen(port, () => {
+   console.log(`Server started on port ${port}`);
+});

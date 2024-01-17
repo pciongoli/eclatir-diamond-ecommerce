@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5662a04.css",
+    "main.js": "/static/js/main.0be57239.js",
+    "static/js/787.25cf5e15.chunk.js": "/static/js/787.25cf5e15.chunk.js",
+    "static/media/Cushion.png": "/static/media/Cushion.2cecaa00674cecd453ba.png",
+    "static/media/Round.png": "/static/media/Round.e0adf81b7c1b07fa9490.png",
+    "static/media/Heart.png": "/static/media/Heart.22138c66089355ed99d3.png",
+    "static/media/Oval.png": "/static/media/Oval.40b56bbf6456996fea42.png",
+    "static/media/Pear.png": "/static/media/Pear.74304b050399bdabe02e.png",
+    "static/media/Radiant.png": "/static/media/Radiant.fb11cd23eff2793b3c5b.png",
+    "static/media/Princess.png": "/static/media/Princess.93792e9081ec6ae1fefd.png",
+    "static/media/Marquise.png": "/static/media/Marquise.54d3f0ce0fe0cccf8702.png",
+    "static/media/Asscher.png": "/static/media/Asscher.7084499c38465c232521.png",
+    "static/media/Emerald.png": "/static/media/Emerald.a16e5be2f9bb14dadf9b.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.b5662a04.css.map": "/static/css/main.b5662a04.css.map",
+    "main.0be57239.js.map": "/static/js/main.0be57239.js.map",
+    "787.25cf5e15.chunk.js.map": "/static/js/787.25cf5e15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5662a04.css",
+    "static/js/main.0be57239.js"
+  ]
+}
